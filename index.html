@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JWT Auth</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>JWT Authentication</h1>
+    
+    <div class="container">
+        <div class="auth-section">
+            <h2>Register</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <input type="text" id="registerUsername" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="registerPassword" placeholder="Password" required>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+            <p id="registerMessage"></p>
+        </div>
+
+        <div class="auth-section">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <input type="text" id="loginUsername" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="loginPassword" placeholder="Password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <p id="loginMessage"></p>
+        </div>
+
+        <div class="protected-section">
+            <h2>Protected Data</h2>
+            <button id="fetchProtectedData">Fetch Protected Data</button>
+            <div id="protectedData"></div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
